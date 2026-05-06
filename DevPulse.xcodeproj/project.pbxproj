@@ -6,11 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		831CAF032FAB4D7900F0443A /* DevPulseWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 831CAEF92FAB4D7700F0443A /* DevPulseWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		831CAF012FAB4D7900F0443A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 836FF2BD2FAA0853003068CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 831CAEF82FAB4D7700F0443A;
+			remoteInfo = "DevPulseWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		831CAF072FAB4D7900F0443A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				831CAF032FAB4D7900F0443A /* DevPulseWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		831CAEF92FAB4D7700F0443A /* DevPulseWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DevPulseWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		831CAF082FAB524700F0443A /* DevPulseKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DevPulseKit; sourceTree = "<group>"; };
 		836FF2C52FAA0853003068CC /* DevPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		831CAEFA2FAB4D7700F0443A /* DevPulseWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DevPulseWatch Watch App";
+			sourceTree = "<group>";
+		};
 		836FF2C72FAA0853003068CC /* DevPulse */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DevPulse;
@@ -19,6 +54,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		831CAEF62FAB4D7700F0443A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		836FF2C22FAA0853003068CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,7 +74,9 @@
 		836FF2BC2FAA0853003068CC = {
 			isa = PBXGroup;
 			children = (
+				831CAF082FAB524700F0443A /* DevPulseKit */,
 				836FF2C72FAA0853003068CC /* DevPulse */,
+				831CAEFA2FAB4D7700F0443A /* DevPulseWatch Watch App */,
 				836FF2C62FAA0853003068CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				836FF2C52FAA0853003068CC /* DevPulse.app */,
+				831CAEF92FAB4D7700F0443A /* DevPulseWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +93,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		831CAEF82FAB4D7700F0443A /* DevPulseWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831CAF042FAB4D7900F0443A /* Build configuration list for PBXNativeTarget "DevPulseWatch Watch App" */;
+			buildPhases = (
+				831CAEF52FAB4D7700F0443A /* Sources */,
+				831CAEF62FAB4D7700F0443A /* Frameworks */,
+				831CAEF72FAB4D7700F0443A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				831CAEFA2FAB4D7700F0443A /* DevPulseWatch Watch App */,
+			);
+			name = "DevPulseWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "DevPulseWatch Watch App";
+			productReference = 831CAEF92FAB4D7700F0443A /* DevPulseWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		836FF2C42FAA0853003068CC /* DevPulse */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 836FF2D22FAA0854003068CC /* Build configuration list for PBXNativeTarget "DevPulse" */;
@@ -55,10 +122,12 @@
 				836FF2C12FAA0853003068CC /* Sources */,
 				836FF2C22FAA0853003068CC /* Frameworks */,
 				836FF2C32FAA0853003068CC /* Resources */,
+				831CAF072FAB4D7900F0443A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				831CAF022FAB4D7900F0443A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				836FF2C72FAA0853003068CC /* DevPulse */,
@@ -80,6 +149,9 @@
 				LastSwiftUpdateCheck = 2640;
 				LastUpgradeCheck = 2640;
 				TargetAttributes = {
+					831CAEF82FAB4D7700F0443A = {
+						CreatedOnToolsVersion = 26.4;
+					};
 					836FF2C42FAA0853003068CC = {
 						CreatedOnToolsVersion = 26.4;
 					};
@@ -100,11 +172,19 @@
 			projectRoot = "";
 			targets = (
 				836FF2C42FAA0853003068CC /* DevPulse */,
+				831CAEF82FAB4D7700F0443A /* DevPulseWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		831CAEF72FAB4D7700F0443A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		836FF2C32FAA0853003068CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +195,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		831CAEF52FAB4D7700F0443A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		836FF2C12FAA0853003068CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +211,81 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		831CAF022FAB4D7900F0443A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 831CAEF82FAB4D7700F0443A /* DevPulseWatch Watch App */;
+			targetProxy = 831CAF012FAB4D7900F0443A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		831CAF052FAB4D7900F0443A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WG3LD6XTTK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DevPulseWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.bibek.DevPulse;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bibek.DevPulse.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		831CAF062FAB4D7900F0443A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WG3LD6XTTK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DevPulseWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.bibek.DevPulse;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bibek.DevPulse.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
 		836FF2D02FAA0854003068CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -256,11 +417,14 @@
 				DEVELOPMENT_TEAM = WG3LD6XTTK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DevPulse;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,11 +452,14 @@
 				DEVELOPMENT_TEAM = WG3LD6XTTK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DevPulse;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +480,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		831CAF042FAB4D7900F0443A /* Build configuration list for PBXNativeTarget "DevPulseWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831CAF052FAB4D7900F0443A /* Debug */,
+				831CAF062FAB4D7900F0443A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		836FF2C02FAA0853003068CC /* Build configuration list for PBXProject "DevPulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
